@@ -1,13 +1,20 @@
 const express = require("express");
+const inspectionsRoutes = require("./routes/inspections");
 
 const app = express();
 const PORT = 3000;
 
+// Middleware para JSON
+app.use(express.json());
+
+// Rotas
+app.use("/inspections", inspectionsRoutes);
+
+// Rota raiz
 app.get("/", (req, res) => {
   res.json({
-    message: "API de Engenharia rodando com sucesso, com ajuda do CHATGPT",
-    status: "OK",
-    timestamp: new Date().toISOString()
+    application: "Engineering API",
+    status: "running"
   });
 });
 
