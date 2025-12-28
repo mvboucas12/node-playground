@@ -1,12 +1,34 @@
-# Node Playground
+# Engineering Inspection API
 
-This repository contains simple experiments and learning projects using Node.js, com ajuda do ChatGPT em 28-dezembro-2025.
+Backend API for registering and querying technical inspections of engineering equipment, com ajuda do chatGPT em 28-12-2026.
 
-## Requirements
+---
+
+## 📌 Overview
+
+This API allows:
+- Registering technical inspections
+- Listing inspection records
+- Serving as a backend for engineering management systems
+
+Current version uses in-memory storage.
+Future versions will persist data in a database.
+
+---
+
+## ⚙️ Tech Stack
+
+- Node.js
+- Express
+- JavaScript (ES6)
+
+---
+
+## ▶️ How to Run
+
+### Requirements
 - Node.js (LTS)
 
-## How to run
+### Installation
 ```bash
 npm install
-node index.js 
-
