@@ -1,5 +1,5 @@
-const express = require("express");
-const inspectionsRoutes = require("./routes/inspections");
+import express from "express";
+import inspectionsRoutes from "./routes/inspections.js";
 
 const app = express();
 const PORT = 3000;
