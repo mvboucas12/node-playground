@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<link rel="stylesheet" href="styles.css" />
+<div class="container">
+<head>
+  <meta charset="UTF-8" />
+  <title>Inspeções</title>
+</head>
+<body>
+  <h1>Nova Inspeção</h1>
+
+  <form id="inspectionForm">
+    <input type="text" id="equipmentId" placeholder="ID do Equipamento" required />
+    <input type="text" id="inspector" placeholder="Inspetor" required />
+
+    <select id="status" required>
+      <option value="">Selecione o status</option>
+      <option value="OK">OK</option>
+      <option value="NOK">NOK</option>
+      <option value="CRITICAL">CRITICAL</option>
+    </select>
+
+    <textarea id="notes" placeholder="Observações"></textarea>
+
+    <button type="submit">Salvar</button>
+  </form>
+
+  <pre id="result"></pre>
+
+  <script src="app.js"></script>
+</body>
+</div>
+</html>

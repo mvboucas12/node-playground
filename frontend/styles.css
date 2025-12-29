@@ -1,0 +1,112 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #333;
+  padding: 40px;
+}
+
+/* Container principal */
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Título */
+h1 {
+  margin-bottom: 25px;
+  color: #1f2937;
+  text-align: center;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Labels */
+label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Inputs e select */
+input,
+select,
+textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #cbd5e1;
+  font-size: 0.95rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* Botão */
+button {
+  margin-top: 15px;
+  padding: 12px;
+  background-color: #2563eb;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Lista de inspeções */
+.inspections {
+  margin-top: 40px;
+}
+
+.inspections h2 {
+  margin-bottom: 15px;
+}
+
+/* Card de inspeção */
+.inspection-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* Status */
+.status {
+  font-weight: bold;
+}
+
+.status.OK {
+  color: #16a34a;
+}
+
+.status.NOK {
+  color: #dc2626;
+}
+
+.status.CRITICAL {
+  color: #b91c1c;
+}

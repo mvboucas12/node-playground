@@ -1,8 +1,12 @@
 import express from "express";
 import inspectionsRoutes from "./routes/inspections.js";
+import cors from "cors";
 
 const app = express();
 const PORT = 3000;
+
+// 🔓 CORS (libera o frontend)
+app.use(cors());
 
 // Middleware para JSON
 app.use(express.json());
