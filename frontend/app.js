@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000/inspections";
+const API_URL = `${window.location.origin}/inspections`;
 
 const form = document.getElementById("inspectionForm");
 const output = document.getElementById("output");
